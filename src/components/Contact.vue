@@ -5,6 +5,9 @@ const name = ref('')
 const email = ref('')
 const message = ref('')
 
+function submitEmail() {
+  console.log("hello")
+}
 
 </script>
 
