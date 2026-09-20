@@ -67,7 +67,7 @@ onMounted(() => {
 
 <template>
   <section ref="experience" class="experience">
-    <div class="min-h-screen flex flex-col md:p-10 p-2 justify-center items-center">
+    <div class="min-h-[60vh] flex flex-col md:p-10 p-2 justify-center items-center">
       <div class="flex flex-col md:w-[40%] w-[90%]">
 
         <!-- Terminal command -->

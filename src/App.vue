@@ -10,6 +10,7 @@ import About from "@/components/About.vue";
 import TechStack from "@/components/Tech-Stack.vue";
 import Projects from "@/components/Projects.vue";
 import Experience from "@/components/Experience.vue";
+import Contact from "@/components/Contact.vue";
 
 gsap.registerPlugin(SplitText, ScrollTrigger, ScrollSmoother);
 
@@ -44,31 +45,7 @@ onMounted(async () => {
       <TechStack></TechStack>
       <Projects></Projects>
       <Experience></Experience>
-
-
-      <section class="future">
-        <div class="min-h-screen flex flex-col p-10 justify-center items-center">
-          <div class="flex flex-col w-[40%]">
-            <p class="font-fira-code text-green-one">
-              ~$ sudo nano future.conf
-            </p>
-          </div>
-        </div>
-      <section>
-
-      <section class="contact">
-        <div class="min-h-screen flex flex-col p-10 justify-center items-center">
-          <div class="flex flex-col w-[40%]">
-            <p class="font-fira-code text-green-one">
-              ~/contact$ bash contact.sh
-            </p>
-          </div>
-        </div>
-      </section>
-
-
-      </section>
-    </section>
+      <Contact></Contact>
     </section>
   </main>
 </template>
