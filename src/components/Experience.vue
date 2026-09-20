@@ -12,7 +12,6 @@ const experienceHeader = ref<HTMLElement | null>(null);
 const experienceDetails = ref<HTMLElement | null>(null);
 
 onMounted(() => {
-<<<<<<< HEAD
   if (
     !experience.value ||
     !experienceCommand.value ||
@@ -24,12 +23,6 @@ onMounted(() => {
 
   const ctx = gsap.context(() => {
     const bullets = experienceDetails.value!.querySelectorAll("p");
-=======
-  if (!experience.value) return;
-
-  const ctx = gsap.context(() => {
-    const bullets = experienceDetails.value?.querySelectorAll("p");
->>>>>>> d4070230deccc259b5e0cd380937a2edb83f8fb9
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -37,10 +30,6 @@ onMounted(() => {
         start: "top bottom",
         end: "bottom 90%",
         scrub: true,
-<<<<<<< HEAD
-=======
-        // markers: true,
->>>>>>> d4070230deccc259b5e0cd380937a2edb83f8fb9
       },
     });
 
@@ -84,17 +73,10 @@ onMounted(() => {
 
 <template>
   <section ref="experience" class="experience">
-<<<<<<< HEAD
     <div
       class="min-h-[60vh] flex flex-col md:p-10 p-2 justify-center items-center"
     >
       <div class="flex flex-col md:w-[40%] w-[90%]">
-=======
-    <div class="min-h-[60vh] flex flex-col md:p-10 p-2 justify-center items-center">
-      <div class="flex flex-col md:w-[40%] w-[90%]">
-
-        <!-- Terminal command -->
->>>>>>> d4070230deccc259b5e0cd380937a2edb83f8fb9
         <p
           ref="experienceCommand"
           class="font-fira-code text-green-one md:text-md"
@@ -102,10 +84,6 @@ onMounted(() => {
           ~/experience$ cat experience.conf
         </p>
 
-<<<<<<< HEAD
-=======
-        <!-- Experience header -->
->>>>>>> d4070230deccc259b5e0cd380937a2edb83f8fb9
         <div ref="experienceHeader">
           <div class="text-white-one text-md pb-3 font-bold opacity-70">
             <div class="flex gap-3 justify-between">
@@ -117,10 +95,6 @@ onMounted(() => {
           </div>
         </div>
 
-<<<<<<< HEAD
-=======
-        <!-- Experience details -->
->>>>>>> d4070230deccc259b5e0cd380937a2edb83f8fb9
         <div
           ref="experienceDetails"
           class="text-white-one font-fira-mono text-l flex flex-col gap-3"
@@ -144,10 +118,6 @@ onMounted(() => {
             through messaging channels
           </p>
         </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> d4070230deccc259b5e0cd380937a2edb83f8fb9
       </div>
     </div>
   </section>
