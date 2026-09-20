@@ -31,7 +31,6 @@ onMounted(async () => {
       start: "top bottom",
       end: "bottom 85%",
       scrub: true,
-      markers: true,
      }
   });
 

@@ -13,13 +13,13 @@ function submitEmail() {
 
 <template>
     <section class="contact">
-        <div class="min-h-screen flex flex-col p-10 justify-center items-center">
-          <div class="flex flex-col w-[40%] gap-4">
+        <div class="min-h-screen flex flex-col p-2 md:p-10 justify-center items-center">
+          <div class="flex flex-col w-[90%] md:w-[40%] gap-4">
             <p class="font-fira-code text-green-one">
               ~/contact$ bash contact.sh
             </p>
             <div ref="contactArea">
-              <p class="text-white-one text-l font-fira-code">Reach out to me by filling in this form</p>
+              <p class="text-white-one text-l font-fira-code">Reach out to me by filling in this form (which is currently in progress still)</p>
             </div>
             <div class="bg-black-two border-black-one border p-2 md:p-10 flex flex-col gap-2 ">
               <form @submit.prevent="submitEmail">
