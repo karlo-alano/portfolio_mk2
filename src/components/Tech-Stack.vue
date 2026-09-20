@@ -14,161 +14,24 @@ const tech_stack_5 = ref<HTMLElement | null>(null);
 const tech_stack_6 = ref<HTMLElement | null>(null);
 const tech_stack_7 = ref<HTMLElement | null>(null);
 onMounted(() => {
-  const tl_1 = gsap.timeline({
-    scrollTrigger: {
-      trigger: tech_stack_1.value,
-      start: "top bottom",
-      end: "bottom 75%",
-      scrub: true,
-    }
-  });
-  tl_1.from(
-    tech_stack_1.value.querySelectorAll("p"),
-    {
+  const techStacks = [ tech_stack_1, tech_stack_2, tech_stack_3, tech_stack_4, tech_stack_5, tech_stack_6, tech_stack_7, ];
+  techStacks.forEach((stack) => {
+    if (!stack.value) return;
+    gsap.from(stack.value.querySelectorAll("p"), {
       y: 15,
       opacity: 0,
       ease: "steps(2)",
       duration: 0.5,
-      stagger: {
-        each: 0.02,
-        from: "start"
+      stagger: { each: 0.02, from: "start", },
+      scrollTrigger: {
+        trigger: stack.value,
+        start: "top bottom",
+        end: "bottom 75%",
+        scrub: true,
       },
-    }
-  );
-
-  const tl_2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: tech_stack_2.value,
-      start: "top bottom",
-      end: "bottom 75%",
-      scrub: true,
-    }
+    });
   });
-  tl_2.from(
-    tech_stack_2.value.querySelectorAll("p"),
-    {
-      y: 15,
-      opacity: 0,
-      ease: "steps(2)",
-      duration: 0.5,
-      stagger: {
-        each: 0.02,
-        from: "start"
-      },
-    }
-  );
-
-  const tl_3 = gsap.timeline({
-    scrollTrigger: {
-      trigger: tech_stack_3.value,
-      start: "top bottom",
-      end: "bottom 75%",
-      scrub: true,
-    }
-  });
-  tl_3.from(
-    tech_stack_3.value.querySelectorAll("p"),
-    {
-      y: 15,
-      opacity: 0,
-      ease: "steps(2)",
-      duration: 0.5,
-      stagger: {
-        each: 0.02,
-        from: "start"
-      },
-    }
-  );
-
-  const tl_4 = gsap.timeline({
-    scrollTrigger: {
-      trigger: tech_stack_4.value,
-      start: "top bottom",
-      end: "bottom 75%",
-      scrub: true,
-    }
-  });
-  tl_4.from(
-    tech_stack_4.value.querySelectorAll("p"),
-    {
-      y: 15,
-      opacity: 0,
-      ease: "steps(2)",
-      duration: 0.5,
-      stagger: {
-        each: 0.02,
-        from: "start"
-      },
-    }
-  );
-
-  const tl_5 = gsap.timeline({
-    scrollTrigger: {
-      trigger: tech_stack_5.value,
-      start: "top bottom",
-      end: "bottom 75%",
-      scrub: true,
-    }
-  });
-  tl_5.from(
-    tech_stack_5.value.querySelectorAll("p"),
-    {
-      y: 15,
-      opacity: 0,
-      ease: "steps(2)",
-      duration: 0.5,
-      stagger: {
-        each: 0.02,
-        from: "start"
-      },
-    }
-  );
-
-  const tl_6 = gsap.timeline({
-    scrollTrigger: {
-      trigger: tech_stack_6.value,
-      start: "top bottom",
-      end: "bottom 75%",
-      scrub: true,
-    }
-  });
-  tl_6.from(
-    tech_stack_6.value.querySelectorAll("p"),
-    {
-      y: 15,
-      opacity: 0,
-      ease: "steps(2)",
-      duration: 0.5,
-      stagger: {
-        each: 0.02,
-        from: "start"
-      },
-    }
-  );
-
-  const tl_7 = gsap.timeline({
-    scrollTrigger: {
-      trigger: tech_stack_7.value,
-      start: "top bottom",
-      end: "bottom 75%",
-      scrub: true,
-    }
-  });
-  tl_7.from(
-    tech_stack_7.value.querySelectorAll("p"),
-    {
-      y: 15,
-      opacity: 0,
-      ease: "steps(2)",
-      duration: 0.5,
-      stagger: {
-        each: 0.02,
-        from: "start"
-      },
-    }
-  );
 });
-
 </script>
 
 <template>
