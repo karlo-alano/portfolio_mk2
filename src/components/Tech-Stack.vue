@@ -6,14 +6,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
-const tech_stack_1 = ref(null);
-const tech_stack_2 = ref(null);
-const tech_stack_3 = ref(null);
-const tech_stack_4 = ref(null);
-const tech_stack_5 = ref(null);
-const tech_stack_6 = ref(null);
-const tech_stack_7 = ref(null);
-
+const tech_stack_1 = ref<HTMLElement | null>(null);
+const tech_stack_2 = ref<HTMLElement | null>(null);
+const tech_stack_3 = ref<HTMLElement | null>(null);
+const tech_stack_4 = ref<HTMLElement | null>(null);
+const tech_stack_5 = ref<HTMLElement | null>(null);
+const tech_stack_6 = ref<HTMLElement | null>(null);
+const tech_stack_7 = ref<HTMLElement | null>(null);
 onMounted(() => {
   const tl_1 = gsap.timeline({
     scrollTrigger: {
