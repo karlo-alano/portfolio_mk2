@@ -52,17 +52,17 @@ onMounted(async () => {
 
 <template>
   <section class="hero">
-    <div class="min-h-screen flex flex-col justify-center items-center">
-      <div ref="class_greeter_box_a" class="font-geist font-extrabold text-8xl text-white-one p-10">
+    <div class="min-h-screen flex flex-col justify-center items-center md:p-10 p-5">
+      <div ref="class_greeter_box_a" class="font-geist font-extrabold md:text-8xl text-7xl text-white-one text-center">
         <p ref="class_greeter_a">Hello there, I'm Karlo!</p>
       </div>
-      <div class="class_greeter_box_b font-geist text-2xl text-white-one">
+      <div class="class_greeter_box_b font-geist md:text-2xl text-xl text-white-one text-center">
         <p ref="class_greeter_b">I can build, deploy, automate, monitor, and maintain systems. Shall we get along?</p>
       </div>
 
       <div ref="class_button" class="mt-5">
-        <div ref="class_dock" class="flex gap-5">
-          <a class="font-fira-code text-xl text-white-one hover:bg-green-two cursor-pointer p-2" href="/about">./about</a>
+        <div ref="class_dock" class="grid grid-cols-2 gap-5 md:flex md:flex-row">
+          <a href="/about" class="font-fira-code text-xl text-white-one hover:bg-green-two cursor-pointer p-2">./about</a>
           <a class="font-fira-code text-xl text-white-one hover:bg-green-two cursor-pointer p-2">./tech-stack</a>
           <a class="font-fira-code text-xl text-white-one hover:bg-green-two cursor-pointer p-2">./projects</a>
           <a class="font-fira-code text-xl text-white-one hover:bg-green-two cursor-pointer p-2">./experience</a>
@@ -70,6 +70,7 @@ onMounted(async () => {
         </div>
       </div>
       <div>
+
 
       </div>
     </div>

@@ -22,7 +22,6 @@ onMounted(async () => {
       start: "top bottom",
       end: "bottom 95%",
       scrub: true,
-      markers: true
     }
   });
 
@@ -87,12 +86,12 @@ onMounted(async () => {
 
 <template>
   <section ref="about" class="about" id="about">
-    <div class="min-h-screen flex flex-col p-10 justify-center items-center">
-      <div class="flex flex-col gap-4 justify-center w-[40%]">
+    <div class="min-h-screen flex flex-col md:p-10 p-2 justify-center items-center ">
+      <div class="flex flex-col gap-4 justify-center md:w-[40%] w-[90%]">
         <p ref="about_command" class="font-fira-code text-green-one">
           ~/about$ nano about.conf
         </p>
-        <div ref="about_links" class="links md:w-full flex gap-3 flex-col md:flex-row justify-start">
+        <div ref="about_links" class="links md:w-full flex gap-3 flex-row flex-wrap justify-start">
           <a class="opacity-70 transition-all cursor-pointer" href="https://github.com/karlo-alano">
             <p class="font-fira-code text-white-one hover:text-green-one">Github <i class="pi pi-github"></i></p>
           </a>
